@@ -7,7 +7,7 @@ a.value = '333333'
 
 <template>
   <div>
-    vite yyds 承诺nb{{a}}
+    vite yyds 承诺{{a}}
   </div>
 </template>
 
