@@ -1,19 +1,21 @@
-<script setup lang="ts">
-import { Ref, ref } from 'vue';
-
-let a:Ref<string> = ref('')
-a.value = '333333'
-const list:number[] = [];
-list.push(1);
-list.push(Number(null))
+<script setup>
+  let a = 'abc&ABC';
+  let count = a.split('').reduce((cur,per) =>{
+    return cur + = per.toLocaleLowerCase() == 'a' ? 1 : 0;
+  },0)
+  console.log(count);
 </script>
 
 <template>
-  <div>
-    {{list}}
-    vite yyds 承诺{{a}}
-  </div>
+<p>12333333333333333333333333333333333333333333333333333333333333333333333333dasssssssssssssssssssssssssssssssss-------</p>
+
 </template>
 
-<style scoped>
+<style scoped lang="less">
+ p{    
+    width:200px;
+   overflow: hidden;
+   text-overflow:ellipsis;
+   white-space: nowrap;
+ }
 </style>
